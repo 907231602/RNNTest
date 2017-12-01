@@ -44,7 +44,7 @@ class MyFileInfo:
         #print(index)
         picName = self.listFile;
         str = picName[index];
-        img = Image.open("D:\AI\pythonPack\pic4\%s" % str)
+        img = Image.open("D:\AI\pythonPack\pic\%s" % str)
         text = str.split('.')[0]
         if (str.split('.')[1] == 'png'):
             bg = Image.new("RGB", img.size, (255, 255, 255))

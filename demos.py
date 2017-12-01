@@ -4,9 +4,9 @@ import numpy as np
 from GetPicInfo import *
 from PIL import Image
 
-'''
+#获取文件夹下图片的名字和图片信息
 myFile=MyFileInfo()
-fileNum=myFile.totalfile("D:\AI\pythonPack\pic");
+fileNum=myFile.totalfile("D:\AI\pythonPack\pic128");
 fileName=myFile.listFile;
 while(fileNum):
     namePop=fileName.pop();
@@ -18,9 +18,10 @@ while(fileNum):
         img, text = bg, namePop.split('.')[0]
         bg.close()
     fileNum-=1;
-    print('-->',img,text)
-'''
+    #print('-->',img,text)
+    print(text)
 
+'''
 myFile=MyFileInfo()
 fileNum=myFile.totalfile("D:\AI\pythonPack\pic");
 fileName=myFile.listFile;
@@ -35,6 +36,8 @@ for j in range(fileNum):
     #     bg.close()
     # fileNum-=1;
     print('-->',img,text)
+'''
+
 
 
 

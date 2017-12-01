@@ -4,19 +4,22 @@ import codecs
 import random
 def getText():
     str=''
-    with codecs.open("text4.txt",encoding='utf-8') as fp:
+    with codecs.open("text256.txt",encoding='utf-8') as fp:
         data = fp.read()
         str+=data
         kk=set(str)
         kk.remove('\n')
         kk.remove('\r')
-        #print(''.join(kk))
+        print(''.join(kk))
     return ''.join(kk)
 
 def get62Text():
     str=getText();
     str2= random.sample(str, 62)
     return ''.join(str2)
+
+def get256Text():
+    return getText();
 
 def get62ExampleText():
     #解服多护件品推图览下确心预册签荐待成馈

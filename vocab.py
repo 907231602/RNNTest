@@ -7,7 +7,8 @@ import GetText
 '''
 class Vocab():
     def __init__(self):
-        tex = GetText.get62ExampleText()
+        #tex = GetText.get62ExampleText()
+        tex = GetText.get256Text()
         #self.vocab = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"+tex
         self.vocab=tex
         self.size = len(self.vocab)
